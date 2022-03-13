@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	let url = window.location.search;
+	url = url.replace("?", "");	
+	url = url.replace("&", "");	
+	url = url.replace("=", "#");
+	url = url.replace("=", "$");	
+	url = url.replace("id", "");	
+	url = url.replace("pass", "");	
+	var cut2 = url.substr(url.indexOf('#') + 1);
+	var cut3 = url.substr(url.indexOf('$') + 1);
+	cut2 = (cut2.substring(0, cut2.indexOf("$")));
+console.log(cut2)
+console.log(cut3)
+if (cut2 == "aito"){
+	if (cut3 == "aito") {
+		location.href="ai.html"
+	}else{
+		location.href = "https://google.com"}
+	}
+</script>
+</html>
